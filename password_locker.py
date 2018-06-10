@@ -16,7 +16,15 @@ class User:
         self.email = email
 
 
-        
+    def login():
+        print("Enter your username")
+        username = input()
+        print("\n")
+        print("Enter your password")
+        password = input()
+        print("\n")
+        print("Enter your email")
+        email = input()
 
     def add_user():
         print("Hello There, welcome to Password Locker.")
@@ -30,6 +38,10 @@ class User:
             password = input()
             print("Enter your email")
             email = input()
+            
+
+
+
         elif shortcodes == 'lg':
             print("create a login function")
 
