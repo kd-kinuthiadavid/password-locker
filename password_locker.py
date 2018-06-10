@@ -14,3 +14,23 @@ class User:
         self.username = username
         self.password = password
         self.email = email
+
+
+        
+
+    def add_user():
+        print("Hello There, welcome to Password Locker.")
+        print("\n")
+        print("Use the following shortcodes: ca - to create a account, lg - to login")
+        shortcodes = input().lower()
+        if shortcodes == 'ca':
+            print("Enter your Name:")
+            username = input()
+            print("Enter A password")
+            password = input()
+            print("Enter your email")
+            email = input()
+        elif shortcodes == 'lg':
+            print("create a login function")
+
+    add_user()
