@@ -48,7 +48,7 @@ def generate_account():
         r = str(random.randint(0,50))
         password = reversed_account_name + r
         # print(f"your new password is {password}")
-        handle = open("credentials.txt","a")
+        handle = open("account_and_passwords.txt","a")
 
         handle.write(account_to_be_saved)
         handle.write(" ")
