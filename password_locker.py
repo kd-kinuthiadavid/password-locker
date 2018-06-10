@@ -1,4 +1,4 @@
-
+import random
 def all():
     print("Already have an account?(y/n)")
     answer = input().lower()
@@ -25,10 +25,45 @@ def all():
 
 
         handle.close()
-        print("Account created succesfully")
+        print("Account created succesfully\n Would you like to do more with Password Locker!(y/n)")
+        response = input().lower()
+        if response == 'y':
+            generate_account()
+
+        else:
+            print("be sure to come back if you'd like to save a password, have a good day!")
 
     elif answer == 'y':
         login()
+
+
+
+def generate_account():
+    print("Which account would you like to save a password for?")
+    account_to_be_saved = input()
+    print("Enter 'auto'- for an auto-generated password or 'type'- to type in your own password")
+    choice = input()
+    if choice == 'auto':
+        reversed_account_name = account_to_be_saved[::-1]
+        r = str(random.randint(0,50))
+        password = reversed_account_name + r
+        print(f"your new password is {password}")
+        handle = open("credentials.txt","a")
+
+        handle.write(account_to_be_saved)
+        handle.write(" ")
+        handle.write(password)
+        handle.write(" ")
+
+
+
+        handle.close()
+    else:
+        print("type in your password")
+        password = input()
+
+
+
 
 def login():
     print("Enter your username")
