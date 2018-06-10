@@ -25,7 +25,8 @@ def all():
 
 
         handle.close()
-        print("Account created")
+        print("Account created succesfully")
+
     elif answer == 'y':
         login()
 
@@ -45,9 +46,26 @@ def login():
 
                 return True
             else:
-                print("Forgot username or password ?")
+                print("Forgot password ?(y/n)")
+                response = input().lower()
+                if response == 'y':
+                    print("Enter your username")
+                    username = input()
+                    for line in open("credentials.txt", "r").readlines():
+                        my_file = line.split()
 
-                return False
+                        to_be_printed = my_file[1]
+                        username1 = my_file[0]
+                        if username == username1:
+                            print(f"your password is {to_be_printed}")
+                        else:
+                            # print("that username doesn't exist")
+                            login()
+                            # return False
+                else:
+                    print("try again then")
+
+                # return False
 
 class User:
 
