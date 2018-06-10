@@ -102,6 +102,8 @@ def login():
                 else:
                     print("try again then")
 
+                    login()
+
                 # return False
 
 class User:
@@ -120,6 +122,23 @@ class User:
         self.username = username
         self.password = password
         self.email = email
+
+
+class credentials:
+
+    """
+    Class that generates new instances of Users
+    """
+    User_list = []
+
+    def __init__(self,account,password,):
+
+      # """
+      # init method that defines properties for our objects
+      # """
+
+        self.account = account
+        self.password = password
 
 
 
