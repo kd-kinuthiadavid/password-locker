@@ -16,15 +16,15 @@ class User:
         self.email = email
 
 
-    def login():
-        print("Enter your username")
-        username = input()
-        print("\n")
-        print("Enter your password")
-        password = input()
-        print("\n")
-        print("Enter your email")
-        email = input()
+    # def login():
+    #     print("Enter your username")
+    #     username = input()
+    #     print("\n")
+    #     print("Enter your password")
+    #     password = input()
+    #     print("\n")
+    #     print("Enter your email")
+    #     email = input()
 
     def add_user():
         print("Hello There, welcome to Password Locker.")
@@ -34,11 +34,26 @@ class User:
         if shortcodes == 'ca':
             print("Enter your Name:")
             username = input()
+            print("\n")
             print("Enter A password")
             password = input()
+            print("\n")
             print("Enter your email")
             email = input()
-            
+            print("\n")
+
+
+            handle = open("credentials.txt","a")
+
+            handle.write(username)
+            handle.write(" ")
+            handle.write(password)
+            handle.write("\n")
+            handle.write(email)
+            handle.write("\n")
+
+
+            handle.close()
 
 
 
