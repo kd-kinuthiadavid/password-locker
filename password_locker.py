@@ -67,6 +67,10 @@ def generate_account():
 
 
 
+
+
+
+
 def login():
     print("Enter your username")
     username = input()
