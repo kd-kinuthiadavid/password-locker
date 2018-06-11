@@ -2,6 +2,10 @@
 
 An application that enables a user to create an account that saves passwords for other credential accounts.
 
+## Authors
+
+* **KINUTHIA DAVID**
+
 ## Getting Started
 
 ```
@@ -12,29 +16,25 @@ cd password-Locker
 ```
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You need the following:
+* A terminal
+* install git
 
 ```
-Give examples
+sudo apt-get install git
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+No installation required
 
 ```
-Give the example
+git clone https://github.com/kd-kinuthiadavid/password-locker.git
+```
+```
+cd password-Locker
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
@@ -48,37 +48,21 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* Python
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
