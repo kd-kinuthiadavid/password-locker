@@ -56,9 +56,12 @@ Give an example
 
 * Python
 
-## Contributing
+## Contact Information
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+You can contact me using the email below, for comments and in case of any bugs:
+email: kd.kinuthiadavid@gmail.com
+
+
 
 
 
@@ -70,6 +73,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Hat tip to my TM's and colleagues
