@@ -1,11 +1,15 @@
 # Password Locker
 
-One Paragraph of project description goes here
+An application that enables a user to create an account that saves passwords for other credential accounts.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+```
+git clone https://github.com/kd-kinuthiadavid/password-locker.git
+```
+```
+cd password-Locker
+```
 ### Prerequisites
 
 What things you need to install the software and how to install them
