@@ -64,7 +64,7 @@ def generate_account():
     else:
         print("type in your password")
         password = input()
-        print(f"the password to your new {account_to_be_saved} account is {password} and has been saved")
+        print(f"the password to your new {account_to_be_saved} account is {password} and has been saved, and copied, you can paste it anywhere in your laptop, you could even try with your terminal(ctr + shift + v)")
 
 
 
@@ -91,7 +91,7 @@ def login():
                 if jibu == 'y':
                     generate_account()
                 else:
-                    print(f"the password to your new {account_to_be_saved} account is {password} and has been saved")
+                    print("Be sure to come back to Password Locker if you need to save passwords for new accounts")
 
 
                 return True
