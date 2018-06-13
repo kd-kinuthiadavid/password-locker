@@ -85,7 +85,14 @@ def login():
     for line in open("credentials.txt", "r").readlines():
             myVar = line.split()
             if username == myVar[0] and password == myVar[1]:
-                print("login succesfull")
+                print("login successful")
+                print("Would you like to do more with passwor locker?(y/n)")
+                jibu = input()
+                if jibu == 'y':
+                    generate_account()
+                else:
+                    print(f"the password to your new {account_to_be_saved} account is {password} and has been saved")
+
 
                 return True
             else:
