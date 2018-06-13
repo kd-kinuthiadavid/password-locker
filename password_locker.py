@@ -1,4 +1,5 @@
 import random
+import pyperclip
 def all():
     print("Already have an account?(y/n)")
     answer = input().lower()
@@ -59,6 +60,7 @@ def generate_account():
 
         handle.close()
         print(f"the password to your new {account_to_be_saved} account is {password} and has been saved")
+        pyperclip.copy(password)
     else:
         print("type in your password")
         password = input()
